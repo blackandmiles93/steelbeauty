@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="public/css/style.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="public/css/queries.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+        <title>Beauty in Steel</title>
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="public/img/car-logo-1.jpg" alt="bis-logo" class="logo">
+                    <ul class="main-navi js--main-navi">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Find Us</a></li>
+                        <li><a href="#" class="signup">Sign Up</a></li>
+                        <li><a href="#" class="login">Login</a></li>
+                    </ul>
+                    <a class="mobile-navi-icon js--navi-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            
+            <div class="main-car-box">
+                <h1>Beauty in Steel</h1>
+                <a class="btn btn-main" id="register" href="#modal">Begin your journey</a>
+                <a class="btn btn-sec js--scroll-to-about" href="#">Not convinced?</a>
+            </div>
+            
+<!--
+            <div class="modal-container" id="modal">
+                <div class="modal">
+                    <a href="#" class="close">X</a>
+                    <span class="modal_heading">
+                        Enter Your Details
+                    </span>
+                    <form action="#">
+                        <input type="text" placeholder="Email"><br>
+                        <input type="text" placeholder="Username"><br>
+                        <input type="password" placeholder="password"><br>
+                        <input type="submit" class="btn-register" value="Register">
+                    </form>
+                    <a href="#" class="signin">Have an account already?</a>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+            </div>
+-->
+            
+        </header>
+        
+        <section class="section-about js--section-about" id="about">
+            <div class="row">
+                <h2>Restoration and customization</h2>
+                <p class="long-desc">
+                    We take the old barn finds, the quiet gems, the moments in time that seem lost to time, and breathe life into them anew.
+                </p>
+            </div>
+            
+            <div class="row">
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-refresh icons-about"></i>
+                    <h3>Restoration</h3>
+                    <p>
+                        Our restoration division restores 1950's to 1970's classics to their former glory. Sometimes you just can't do everything yourself. We can do total builds from the ground up or partial if you want to make your mark.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-speedometer icons-about"></i>
+                    <h3>Performance</h3>
+                    <p>
+                        Our performance division can take your existing car and turn into something to remember. Our performance team can turn your car into a full r-spec competitor, or just add some extra horsepower if you're not into that.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-battery-charging icons-about"></i>
+                    <h3>Enviro</h3>
+                    <p>
+                        The future is now. Electric and environmentally friendly cars are no longer the vehicular jokes of the world. Turn your vehicle into a enviro-performance machine and leave everyone in silence biting your zero-emission dust.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-people icons-about"></i>
+                    <h3>Events</h3>
+                    <p>
+                        Cars are an expression. Show us and the world what car defines you. Showcase and racing events will be hosted in major cities across the US and soon the world.
+                    </p>
+                </div>    
+            </div>
+        </section>
+        
+        <section class="section-cars">
+            <ul class="car-showcase clearfix">
+                <li>
+                    <figure class="car-photo">
+                        <img src="public/img/resized/car-1.jpg" alt="bmw">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="car-photo">
+                        <img src="public/img/resized/car-3.jpg" alt="">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="car-photo">
+                        <img src="public/img/resized/car-9.jpg" alt="firebird">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="car-photo">
+                        <img src="public/img/resized/car-14.jpg" alt="gtr">
+                    </figure>
+                </li>
+            </ul>
+            <ul class="car-showcase clearfix">
+                <li>
+                    <figure class="car-photo">
+                        <img src="public/img/resized/car-18.jpg" alt="mustang">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="car-photo">
+                        <img src="public/img/resized/car-15.jpg" alt="">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="car-photo">
+                        <img src="public/img/resized/car-19.jpg" alt="240sx-2">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="car-photo">
+                        <img src="public/img/resized/car-10.jpg" alt="rs8">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        
+        <div class="map-box">
+            
+            <div class="map"></div>
+            
+            
+            <div class="form-box">
+                <h2>Get to know us</h2>
+                <div class="row">
+                    <form method="post" action="#" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="find-us">How did you hear about us?</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <select name="find-us" id="find-us">
+                                    <option value="friends">Friends</option>
+                                    <option value="search">Search Engine</option>
+                                    <option value="event">One of our events?</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Newsletter</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="checkbox" name="newsl" id="newsl" checked>Yes
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>       
+            </div>
+            <div class="row">
+                <p>Copyright &copy; 2017 by Beauty In Steel. All rights reserved.</p>
+            </div>
+        </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="vendors/js/gmaps.js"></script>
+        <script src="http://maps.google.com/maps/api/js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        
+        <script src="public/js/scripts.js"></script>
+        
+    </body>
+</html>

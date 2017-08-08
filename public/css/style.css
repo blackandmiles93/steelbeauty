@@ -1,0 +1,529 @@
+/* colors */
+
+/* #2980b9 normal blue i'm using */
+
+/* #20638f this is the darker blue */
+
+
+/* ================================================== */
+/* Global styling */
+/* ================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix { zoom: 1 }
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ================================================== */
+/* reusables */
+/* ================================================== */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    
+}
+
+/* ======= headings ======= */
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    word-spacing: 4px;
+    color: #fff;
+    font-size: 200%;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #2980b9;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.box h3 {
+    text-align: center;
+}
+
+/* ======= p ======= */
+.long-desc {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* ======= icons ======= */
+
+.icons-about {
+    font-size: 300%;
+    display: block;
+    color: #2980b9;
+    text-align: center;
+}
+
+/* ======= modal ======= */
+
+.modal-container:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-container:target div {
+    transform: translate(0px, 0px);
+}
+
+.modal-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(175, 175, 175, 0.5);    
+    transition: all 500ms ease;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.modal {
+    width: 350px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    top: 0px; bottom: 0px;
+    right: 0px; left: 0px;
+    background: #0f0f0f;
+    border-radius: 10px;
+    border: 2px solid #555;
+    padding: 20px;
+}
+
+.modal_heading {
+    width: 100%;
+    display: block;
+    height: 60px;
+    margin-bottom: 10px;
+    color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+}
+
+.modal-container input {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.moda-container div {
+    transform: translate(0px, -50px);
+    transition: all 0.5s ease;
+}
+
+.modal-container a {
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.close {
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    position: absolute;
+    border: 2px solid white;
+    padding: 10px;
+    top: -20px;
+    right: -15px;
+    border-radius: 25%;
+    transition: background 0.2s;
+}
+
+.btn-register:hover {
+    background-color: #20638f;
+    transition: background-color 0.2s;
+}
+
+.close:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+.signin, .forgot-password {
+    color: #fff;
+}
+
+.signin, .forgot-password: hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* ======= buttons ======= */
+
+.btn:link, .btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-main:link, .btn-main:visited,
+input[type=submit] {
+    background-color: #2980b9;
+    border: 1px solid #2980b9;
+    color: #fff;
+}
+
+.btn-sec:link, .btn-sec:visited {
+    border: 1px solid #2980b9;
+    color: #2980b9;
+}
+
+.btn:hover, .btn:active,
+input[type=submit]: hover,
+input[type=submit]:active{
+    background-color: #20638f;
+}
+
+.btn-main:hover, .btn-main:active,
+input[type=submit] {
+    border: 1px solid #20638f;
+}
+
+.btn-sec:hover, .btn-sec:active {
+    border: 1px solid #20638f;
+    color: #fff;
+}
+
+/* ================================================== */
+/* Header */
+/* ================================================== */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)), url(img/car-main-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.main-car-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ======= Main navigation ======= */
+
+.main-navi {
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.main-navi li {
+    display: inline-block;
+    margin-left: 35px;
+    
+}
+
+.main-navi li a:link,
+.main-navi li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-navi li a:hover,
+.main-navi li a:active {
+    border-bottom: 2px solid #2980b9;
+}
+
+/* ======= sticky navigation ======= */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 1px #efecec;
+    z-index: 9998;
+}
+
+.sticky .main-navi { margin-top: 15px; }
+
+.sticky .main-navi li a:link,
+.sticky .main-navi li a:visited {
+    padding: 15px 0;
+    color: #555;
+}
+
+/* ======= mobile navigation ======= */
+
+.mobile-navi-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-navi-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+/* ======= Logo ======= */
+.logo {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: auto;
+    float: left;
+    border: 3px solid #555;
+    border-radius: 50%;
+}
+
+/* ================================================== */
+/* about */
+/* ================================================== */
+
+.section-about .long-desc {
+    margin-bottom: 35px;
+}
+
+/* ================================================== */
+/* car showcase */
+/* ================================================== */
+
+.section-cars {
+    padding: 0;
+}
+
+.car-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.car-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.car-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.car-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+.car-photo img:hover {
+    transform: scale(1.03);
+}
+
+/* ================================================== */
+/* contact form */
+/* ================================================== */
+
+.contact-form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select, textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus { outline: none; }
+
+.map-box {
+    width: 100%;
+    height: 560px;
+    position: relative;
+}
+
+.map {
+    width: 100%;
+    height: 560px;
+    position: relative;
+    z-index: 0;
+}
+
+.form-box {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: 10;
+    height: 560px;
+    padding-top: 40px;
+}
+
+/* ================================================== */
+/* Footer */
+/* ================================================== */
+
+footer {
+    background-color: #333;
+    padding: 30px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888888;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #55acee;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #125688;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
