@@ -51,21 +51,29 @@ $(document).ready(function() {
         }
     });
     
-    var map = new GMaps({
-        div: '.map',
-        lat: 40.7313923,
-        lng: -74.18,
-        zoom: 12
+    $('.js-wp-1').waypoint(function(direction) {
+        $('.js-wp-1').addClass('animated fadeInUp');
+    }, {
+        offset: '70%'
     });
     
-    map.addMarker({
-      lat: 40.7313923,
-      lng: -74.2522674,
-      title: 'Newark',
-      infoWindow: function(e) {
-        content: '<p>Our office and garage are located in Newark, NJ!</p>'
-      }
-    });
+    
+    
+//    var map = new GMaps({
+//        div: '.map',
+//        lat: 40.7313923,
+//        lng: -74.18,
+//        zoom: 12
+//    });
+//    
+//    map.addMarker({
+//      lat: 40.7313923,
+//      lng: -74.2522674,
+//      title: 'Newark',
+//      infoWindow: function(e) {
+//        content: '<p>Our office and garage are located in Newark, NJ!</p>'
+//      }
+//    });
     
     
 });
