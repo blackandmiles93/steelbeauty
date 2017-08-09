@@ -314,6 +314,11 @@ header {
     z-index: 9998;
 }
 
+.sticky .logo {
+    margin-top: 15px;
+    height: 35px;
+}
+
 .sticky .main-navi { margin-top: 15px; }
 
 .sticky .main-navi li a:link,
@@ -338,12 +343,11 @@ header {
 
 /* ======= Logo ======= */
 .logo {
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 10px;
-    height: 50px;
+    height: 60px;
     width: auto;
     float: left;
-    border: 3px solid #555;
     border-radius: 50%;
 }
 
